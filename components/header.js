@@ -76,7 +76,7 @@ const Header = () => {
             </svg>
           </button>
         </a>
-        <Link href="/sign-up">
+        <Link href="/contact">
           <button className="ml-6 px-8 h-10 text-black text-sm font-extrabold tracking-widest bg-white hover:bg-gray-300 shadow-xl transform uppercase hover:scale-105 duration-300">
             CONTACT ME
           </button>
