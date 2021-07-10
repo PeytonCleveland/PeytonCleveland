@@ -11,13 +11,11 @@ const Header = () => {
       <div className="flex flex-row items-center ml-1.5 space-x-4">
         <Link href="/">
           <a>
-            <Image src="/peyton.svg" className="hidden w-28 md:block md:w-40" />
+            <div className="w-40 relative h-8">
+              <Image layout="fill" src="/peyton.svg" />
+            </div>
           </a>
         </Link>
-        <Image
-          src="/Vercel-Primary.svg"
-          className="block w-28 md:hidden md:w-36"
-        />
       </div>
       <button
         className="block mr-2.5 text-green-400 md:text-gray-900 lg:hidden"
@@ -99,9 +97,7 @@ const Header = () => {
         <div className="bg-gradient-to-br shadow-lg from-gray-800 to-gray-900 ring-black ring-opacity-5 ring-1">
           <div className="pb-6 pt-5 px-5">
             <div className="flex items-center justify-between">
-              <div>
-                <Image src="/Vercel-Primary.svg" className="w-36" />
-              </div>
+              <div></div>
               <div>
                 <button
                   type="button"
@@ -120,7 +116,8 @@ const Header = () => {
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
+                      strokeWgit
+                      puidth="2"
                       d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>
