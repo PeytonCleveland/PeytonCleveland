@@ -26,8 +26,8 @@ export default function Contact() {
             CONTACT <span className="outlinedbright text-deep-gray">ME</span>
           </h1>
           <p className="text-lg font-normal text-gray-300 w-7/12 mb-6">
-            Interested in having a chat? Fill out the form below and I'll reach
-            out to you shortly.
+            Interested in having a chat? Fill out the form below and I&#39;ll
+            reach out to you shortly.
           </p>
           <div
             style={{ backgroundColor: `#191919`, width: `920px` }}
