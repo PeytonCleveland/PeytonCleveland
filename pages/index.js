@@ -18,7 +18,7 @@ export default function Home() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://peytoncleveland.com/" />
-        <meta property="og:locale" content="en_us" />
+        <meta property="og:locale" content="en_US" />
 
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
