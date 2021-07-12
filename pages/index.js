@@ -26,7 +26,7 @@ export default function Home() {
             DRIVING <span className="outlinedbright text-deep-gray">THE</span>{" "}
             <br /> DIGITAL REVOLUTION
           </h1>
-          <p className="text-lg font-medium text-gray-300 w-7/12">
+          <p className="text-lg font-normal text-gray-300 w-7/12">
             I create digital products and toolings to drive the adoption of
             skills-based education and hiring. I build experiences that people
             love to use, utilizing modern tech stacks and serverless
@@ -57,7 +57,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="absolute bottom-10 flex flex-col space-y-3">
-            <p className="text-white text-sm font-extrabold uppercase tracking-wider">
+            <p className="text-white text-xs font-bold uppercase tracking-widest">
               Let&apos;s Connect
             </p>
             <div className="flex flex-row space-x-4">

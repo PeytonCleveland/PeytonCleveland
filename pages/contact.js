@@ -22,16 +22,20 @@ export default function Contact() {
       </Head>
       <div className="container h-screen flex flex-row items-center">
         <div className="h-full w-full flex flex-col justify-end">
-          <h1 className="text-white font-black tracking-wider text-7xl mb-5">
+          <h1 className="text-white font-black tracking-wider text-7xl mb-3">
             CONTACT <span className="outlinedbright text-deep-gray">ME</span>
           </h1>
+          <p className="text-lg font-normal text-gray-300 w-7/12 mb-6">
+            Interested in having a chat? Fill out the form below and I'll reach
+            out to you shortly.
+          </p>
           <div
-            style={{ backgroundColor: `#191919`, width: `862px` }}
-            className="h-3/5 -ml-20"
+            style={{ backgroundColor: `#191919`, width: `920px` }}
+            className="h-3/5 -ml-20 border-gray-400 border-r-2 border-t-2"
           >
             <form className="ml-20 pt-10">
               <div className="flex flex-row space-x-12">
-                <div style={{ width: `330px` }} className="flex flex-col">
+                <div style={{ width: `345px` }} className="flex flex-col">
                   <label className="text-white font-bold uppercase mb-1 tracking-wider">
                     Full Name
                   </label>
@@ -41,7 +45,7 @@ export default function Contact() {
                     placeholder="Jane Doe"
                   />
                 </div>
-                <div style={{ width: `330px` }} className="flex flex-col">
+                <div style={{ width: `345px` }} className="flex flex-col">
                   <label className="text-white font-bold uppercase mb-1 tracking-wider">
                     Email Address
                   </label>
@@ -52,7 +56,7 @@ export default function Contact() {
                   />
                 </div>
               </div>
-              <div style={{ width: `708px` }} className="flex flex-col mt-8">
+              <div style={{ width: `738px` }} className="flex flex-col mt-8">
                 <label className="text-white font-bold uppercase mb-1">
                   MESSAGE
                 </label>
@@ -62,7 +66,7 @@ export default function Contact() {
                 />
               </div>
               <div
-                style={{ paddingRight: `74px` }}
+                style={{ paddingRight: `98px` }}
                 className="w-full flex flex-row justify-end"
               >
                 <Link href="/sign-up">

@@ -13,6 +13,10 @@
     paint-order: stroke-fill;
     font-family: "Poppins", sans-serif;
   }
+
+  .error {
+    font-family: "Poppins", sans-serif;
+  }
 }
 
 @layer base {
