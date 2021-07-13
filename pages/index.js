@@ -33,7 +33,7 @@ export default function Home() {
         />
       </Head>
 
-      <div className="container h-screen flex flex-row px-4">
+      <div className="container h-screen flex flex-row px-4 md:px-0">
         <div className="h-full flex flex-col justify-start md:justify-center pt-40 md:pt-0">
           <h1 className="text-white font-black tracking-wider text-5xl md:text-7xl mb-5 z-20">
             DRIVING <span className="outlinedbright text-deep-gray">THE</span>{" "}
