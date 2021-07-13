@@ -7,18 +7,18 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="container fixed z-50 left-0 right-0 flex flex-row justify-between items-center py-0 h-16 bg-gradient-to-br shadow-xl from-gray-800 to-gray-900 md:absolute md:py-6 md:h-24 md:border-b-2 md:border-gray-400 md:shadow-none md:from-transparent md:to-transparent lg:w-full">
+    <header className="container fixed z-50 left-0 right-0 flex flex-row justify-between items-center px-3 py-4 bg-black md:bg-transparent shadow-xl md:absolute md:px-0 md:py-6 md:h-24 md:border-b-2 md:border-gray-400 md:shadow-none md:from-transparent md:to-transparent lg:w-full">
       <div className="flex flex-row items-center ml-1.5 space-x-4">
         <Link href="/">
           <a>
             <div className="w-40 relative h-8">
-              <Image layout="fill" src="/peyton.svg" />
+              <Image layout="fill" src="/peyton.svg" alt="Peyton Logo" />
             </div>
           </a>
         </Link>
       </div>
       <button
-        className="block mr-2.5 text-green-400 md:text-gray-900 lg:hidden"
+        className="block mr-2.5 text-white md:text-gray-900 lg:hidden"
         onClick={() => setOpen(!open)}
       >
         <svg
@@ -36,7 +36,7 @@ const Header = () => {
           />
         </svg>
       </button>
-      <div className="flex space-x-10">
+      <div className="md:flex space-x-10 hidden">
         <Link href="/portfolio">
           <a className="text-gray-300 opacity-80 font-extrabold text-sm tracking-widest transform uppercase hover:scale-105 duration-300 hover:text-green-200 hover:opacity-70">
             Portfolio
@@ -85,7 +85,7 @@ const Header = () => {
       <div
         className={classNames(
           // Common classes
-          "absolute inset-x-0 top-0 p-2 transform origin-top-right transition lg:hidden",
+          "absolute inset-x-0 top-0 transform origin-top-right transition lg:hidden",
           {
             block: open === true,
           },
@@ -94,15 +94,30 @@ const Header = () => {
           }
         )}
       >
-        <div className="bg-gradient-to-br shadow-lg from-gray-800 to-gray-900 ring-black ring-opacity-5 ring-1">
-          <div className="pb-6 pt-5 px-5">
+        <div className="shadow-lg ring-black ring-opacity-5 ring-1 bg-black">
+          <div
+            style={{ paddingLeft: `18px`, paddingRight: `18px` }}
+            className="pb-6 pt-5"
+          >
             <div className="flex items-center justify-between">
-              <div></div>
+              <div>
+                <Link href="/">
+                  <a>
+                    <div className="w-40 relative h-8">
+                      <Image
+                        layout="fill"
+                        src="/peyton.svg"
+                        alt="Peyton Logo"
+                      />
+                    </div>
+                  </a>
+                </Link>
+              </div>
               <div>
                 <button
                   type="button"
                   onClick={() => setOpen(!open)}
-                  className="inline-flex items-center justify-center p-2 text-gray-900 bg-gradient-to-br focus:outline-none from-green-400 to-green-500 focus:ring-indigo-500 focus:ring-2 focus:ring-inset"
+                  className="inline-flex items-center justify-center p-2 text-deep-gray bg-white focus:outline-none focus:ring-indigo-500 focus:ring-2 focus:ring-inset"
                 >
                   <span className="sr-only">Close menu</span>
                   <svg

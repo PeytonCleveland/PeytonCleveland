@@ -5,14 +5,15 @@ const Chat = () => {
   const [open, setOpen] = useState(false);
   const chatClasses = () =>
     classNames({
-      "bg-gray-50 w-96 h-4/6 fixed bottom-24 right-6 flex flex-col": open,
+      "bg-gray-50 md:w-96 md:h-4/6 h-screen fixed bottom-0 md:bottom-24 w-screen md:right-6 flex flex-col z-50":
+        open,
       hidden: !open,
     });
   return (
     <>
       <div
         onClick={() => setOpen(!open)}
-        className="fixed flex justify-center items-center right-6 bottom-6 bg-white w-12 h-12 cursor-pointer transform uppercase hover:scale-105 duration-300"
+        className="fixed flex justify-center items-center right-4 md:right-6 bottom-6 bg-white w-12 h-12 cursor-pointer transform uppercase hover:scale-105 duration-300"
       >
         <svg
           focusable="false"

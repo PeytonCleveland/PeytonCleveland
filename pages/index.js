@@ -32,21 +32,22 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <div className="container h-screen flex flex-row items-center">
-        <div className="h-full flex flex-col justify-center">
-          <h1 className="text-white font-black tracking-wider text-7xl mb-5">
+
+      <div className="container h-screen flex flex-row px-4">
+        <div className="h-full flex flex-col justify-start md:justify-center pt-40 md:pt-0">
+          <h1 className="text-white font-black tracking-wider text-5xl md:text-7xl mb-5 z-20">
             DRIVING <span className="outlinedbright text-deep-gray">THE</span>{" "}
             <br /> DIGITAL REVOLUTION
           </h1>
-          <p className="text-lg font-normal text-gray-300 w-7/12">
+          <p className="md:text-lg text-md font-light text-gray-300 w-11/12 md:w-7/12 z-20">
             I create digital products and toolings to drive the adoption of
             skills-based education and hiring. I build experiences that people
             love to use, utilizing modern tech stacks and serverless
             architectures.
           </p>
-          <div className="flex space-x-6 mt-7">
+          <div className="flex space-x-6 mt-7 w-full justify-center md:justify-start">
             <Link href="/">
-              <button className="h-10 hover:bg-gray-900 hover:bg-opacity-50 px-8 border-2 text-white flex justify-center items-center text-sm font-extrabold transform uppercase hover:scale-105 duration-300 tracking-widest">
+              <button className="h-10 w-1/2 md:w-auto z-20 hover:bg-gray-900 hover:bg-opacity-50 md:px-8 border-2 text-white flex justify-center items-center text-sm font-extrabold transform uppercase hover:scale-105 duration-300 tracking-widest">
                 RESUMé{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,76 +63,94 @@ export default function Home() {
                 </svg>
               </button>
             </Link>
-            <Link href="/sign-up">
-              <button className="ml-6 px-8 h-10 text-black text-sm font-extrabold tracking-widest bg-white hover:bg-gray-300 shadow-xl transform uppercase hover:scale-105 duration-300">
+            <Link href="/contact">
+              <button className="ml-6 z-20 w-1/2 md:w-auto md:px-8 h-10 text-black text-sm font-extrabold tracking-widest bg-white hover:bg-gray-300 shadow-xl transform uppercase hover:scale-105 duration-300">
                 CONTACT ME
               </button>
             </Link>
           </div>
-          <div className="absolute bottom-10 flex flex-col space-y-3">
+          <div className="absolute bottom-6 md:bottom-10 flex flex-col space-y-3">
             <p className="text-white text-xs font-bold uppercase tracking-widest">
               Let&apos;s Connect
             </p>
             <div className="flex flex-row space-x-4">
               <div className="w-8 h-8 relative">
                 <a href="https://google.com">
-                  <Image layout="fill" src="/linkedin.svg" />
+                  <Image layout="fill" src="/linkedin.svg" alt="LinkedIn" />
                 </a>
               </div>
               <div className="w-8 h-8 relative">
                 <a href="https://github.com/PeytonCleveland">
-                  <Image layout="fill" src="/github.svg" className="w-8 h-8" />
+                  <Image
+                    layout="fill"
+                    src="/github.svg"
+                    className="w-8 h-8"
+                    alt="Github"
+                  />
                 </a>
               </div>
               <div className="w-8 h-8 relative">
                 <a href="https://google.com">
-                  <Image layout="fill" src="/slack.svg" className="w-8 h-8" />
+                  <Image
+                    layout="fill"
+                    src="/slack.svg"
+                    className="w-8 h-8"
+                    alt="Slack"
+                  />
                 </a>
               </div>
               <div className="w-8 h-8 relative">
                 <a href="https://discordapp.com/users/646023304087470101">
-                  <Image layout="fill" src="/discord.svg" className="w-8 h-8" />
+                  <Image
+                    layout="fill"
+                    src="/discord.svg"
+                    className="w-8 h-8"
+                    alt="Discord"
+                  />
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="pl-16 mt-2 space-y-3 absolute right-0 h-screen w-2/6 overflow-hidden whitespace-nowrap">
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent opacity-5">
+        <div className="md:pl-16 mt-8 md:mt-2 space-y-3 absolute right-0 h-screen w-3/5 md:w-2/6 overflow-hidden whitespace-nowrap z-0 text-4xl md:text-6xl">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30 md:opacity-5">
             Pentesting & Malware
           </h6>
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent opacity-10">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30 md:opacity-10">
             User Experience Design
           </h6>
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent opacity-20">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30 md:opacity-20">
             CISCO Networking
           </h6>
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
             Adobe XD & Sketch
           </h6>
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30 md:opacity-40">
             Product Management
           </h6>
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent opacity-50">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30 md:opacity-50">
             RASA & Dialogflow
           </h6>
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent opacity-60">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30 md:opacity-60">
             IOS Development
           </h6>
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent opacity-70">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30 md:opacity-70">
             Pytorch & Tensorflow
           </h6>
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent opacity-80">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30 md:opacity-80">
             Version Control
           </h6>
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent opacity-90">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30 md:opacity-90">
             Jest & CYPRESS
           </h6>
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30 md:opacity-100">
             React Development
           </h6>
-          <h6 className="text-6xl outlined uppercase font-extrabold tracking-wider text-transparent">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30 md:opacity-100">
             Cloud Engineering
+          </h6>
+          <h6 className="outlined block uppercase font-extrabold tracking-wider text-transparent opacity-30 md:hidden">
+            Product Design
           </h6>
         </div>
       </div>

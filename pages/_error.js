@@ -23,6 +23,7 @@ export default function Custom404() {
           width="425px"
           height="260px"
           className="absolute opacity-60"
+          alt="Page not found"
         />
         <div className="text-white absolute text-center space-y-3 pt-10">
           <h2 className="text-4xl font-bold tracking-wider leading-relaxed error">
