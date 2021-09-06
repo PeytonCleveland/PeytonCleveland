@@ -7,7 +7,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="container fixed z-50 left-0 right-0 flex flex-row justify-between items-center px-3 py-4 bg-black md:bg-transparent shadow-xl md:absolute md:px-0 md:py-6 md:h-24 md:border-b-2 md:border-gray-400 md:shadow-none md:from-transparent md:to-transparent lg:w-full">
+    <header className="container fixed z-50 left-0 right-0 flex flex-row justify-between items-center px-3 py-4 bg-black md:bg-transparent shadow-xl md:absolute lg:px-1 md:py-6 md:h-24 md:border-b-2 md:border-gray-400 md:shadow-none md:from-transparent md:to-transparent lg:w-full">
       <div className="flex flex-row items-center ml-1.5 space-x-4">
         <Link href="/">
           <a>
@@ -18,12 +18,13 @@ const Header = () => {
         </Link>
       </div>
       <button
-        className="block mr-2.5 text-white md:text-gray-900 lg:hidden"
+        className="block mr-1 text-white
+         lg:hidden"
         onClick={() => setOpen(!open)}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-10 h-10"
+          className="h-10 w-10"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -31,12 +32,12 @@ const Header = () => {
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 8h16M4 16h16"
+            strokeWidth={2}
+            d="M4 6h16M4 12h16M4 18h16"
           />
         </svg>
       </button>
-      <div className="md:flex space-x-10 hidden">
+      <div className="lg:flex space-x-10 hidden">
         <Link href="/portfolio">
           <a className="text-gray-300 opacity-80 font-extrabold text-sm tracking-widest transform uppercase hover:scale-105 duration-300 hover:text-green-200 hover:opacity-70">
             Portfolio
@@ -97,7 +98,7 @@ const Header = () => {
         <div className="shadow-lg ring-black ring-opacity-5 ring-1 bg-black">
           <div
             style={{ paddingLeft: `18px`, paddingRight: `18px` }}
-            className="pb-6 pt-5"
+            className="pb-6 pt-4"
           >
             <div className="flex items-center justify-between">
               <div>

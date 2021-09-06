@@ -6,8 +6,8 @@ export default function Custom404() {
     <>
       <div className="absolute left-0 right-0 top-0 bottom-0 flex justify-center items-center overflow-y-hidden flex-col">
         <h1
-          style={{ fontSize: `41rem`, color: `#171717` }}
-          className="text-gray-800 font-bold error m-0 mt-10"
+          style={{ fontSize: `14rem`, color: `#171717` }}
+          className="text-gray-800 font-bold error m-0 mt-10 text-5xl md:four"
         >
           404
         </h1>

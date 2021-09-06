@@ -17,6 +17,10 @@
   .error {
     font-family: "Poppins", sans-serif;
   }
+
+  .four {
+    font-size: 41rem;
+  }
 }
 
 @layer base {
@@ -24,7 +28,11 @@
   body {
     padding: 0;
     margin: 0;
-    background-color: #0d0d0d;
+    background: linear-gradient(
+      90deg,
+      rgba(18, 18, 18, 1) 0%,
+      rgba(8, 8, 8, 1) 100%
+    );
   }
 
   h6 {
