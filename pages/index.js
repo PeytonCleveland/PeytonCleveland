@@ -99,43 +99,43 @@ export default function Home() {
           </div>
         </div>
         <div className="md:pl-10 mt-8 md:mt-2 space-y-3 absolute right-0 h-screen w-3/5 md:w-1/2 lg:w-2/6 overflow-hidden whitespace-nowrap z-0 text-4xl md:text-6xl">
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             Pentesting & Malware
           </h6>
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             User Experience Design
           </h6>
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             CISCO Networking
           </h6>
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             Adobe XD & Sketch
           </h6>
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             Product Management
           </h6>
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             RASA & Dialogflow
           </h6>
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             IOS Development
           </h6>
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             Pytorch & Tensorflow
           </h6>
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             Version Control
           </h6>
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             Jest & CYPRESS
           </h6>
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             React Development
           </h6>
-          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-30">
+          <h6 className="outlined uppercase font-extrabold tracking-wider text-transparent opacity-40">
             Cloud Engineering
           </h6>
-          <h6 className="outlined block uppercase font-extrabold tracking-wider text-transparent lg:hidden opacity-30">
+          <h6 className="outlined block uppercase font-extrabold tracking-wider text-transparent lg:hidden opacity-40">
             Product Design
           </h6>
         </div>
