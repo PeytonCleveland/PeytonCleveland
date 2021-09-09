@@ -3,9 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  console.log(
-    "\nHiring? \nPlease email me at peyton.cleveland.1@gmail.com\n\n      ▄█    █▄     ▄█     ▄████████    ▄████████        ▄▄▄▄███▄▄▄▄      ▄████████\n     ███    ███   ███    ███    ███   ███    ███      ▄██▀▀▀███▀▀▀██▄   ███    ███\n     ███    ███   ███▌   ███    ███   ███    █▀       ███   ███   ███   ███    █▀\n    ▄███▄▄▄▄███▄▄ ███▌  ▄███▄▄▄▄██▀  ▄███▄▄▄          ███   ███   ███  ▄███▄▄▄\n   ▀▀███▀▀▀▀███▀  ███▌ ▀▀███▀▀▀▀▀   ▀▀███▀▀▀          ███   ███   ███ ▀▀███▀▀▀\n     ███    ███   ███  ▀███████████   ███    █▄       ███   ███   ███   ███    █▄\n     ███    ███   ███    ███    ███   ███    ███      ███   ███   ███   ███    ███\n     ███    █▀    █▀     ███    ███   ██████████       ▀█   ███   █▀    ██████████\n                         ███    ███                                                \n\n"
-  );
   return (
     <div>
       <Head>
@@ -78,22 +75,22 @@ export default function Home() {
               Let&apos;s Connect
             </p>
             <div className="flex flex-row space-x-3 md:space-x-4">
-              <div className="w-6 h-6 md:w-8 md:h-8 relative">
+              <div className="w-6 h-6 md:w-8 md:h-8 relative transform hover:scale-105 duration-300">
                 <a href="https://google.com">
                   <Image layout="fill" src="/linkedin.svg" alt="LinkedIn" />
                 </a>
               </div>
-              <div className="w-6 h-6 md:w-8 md:h-8 relative">
+              <div className="w-6 h-6 md:w-8 md:h-8 relative transform hover:scale-105 duration-300">
                 <a href="https://github.com/PeytonCleveland">
                   <Image layout="fill" src="/github.svg" alt="Github" />
                 </a>
               </div>
-              <div className="w-6 h-6 md:w-8 md:h-8 relative">
+              <div className="w-6 h-6 md:w-8 md:h-8 relative transform hover:scale-105 duration-300">
                 <a href="https://google.com">
                   <Image layout="fill" src="/slack.svg" alt="Slack" />
                 </a>
               </div>
-              <div className="w-6 h-6 md:w-8 md:h-8 relative">
+              <div className="w-6 h-6 md:w-8 md:h-8 relative transform hover:scale-105 duration-300">
                 <a href="https://discordapp.com/users/646023304087470101">
                   <Image layout="fill" src="/discord.svg" alt="Discord" />
                 </a>
@@ -141,6 +138,33 @@ export default function Home() {
           <h6 className="outlined block uppercase font-extrabold tracking-wider text-transparent lg:hidden opacity-40">
             Product Design
           </h6>
+        </div>
+      </div>
+      <div className="w-screen bg-gradient-to-br from-gray-100 to-gray-200 flex flex-row overflow-x-hidden relative">
+        <img src="redacted.png" className="w-1/2 z-20" />
+        <div className="container -ml-24 mt-12 overflow-hidden flex flex-col">
+          <h2 className="text-5xl tracking-wider font-extrabold whitespace-nowrap z-10 text-gray-300 scrolltext poppins">
+            ABOUT ME <span className="text-deep-gray opacity-60">ABOUT ME</span>{" "}
+            ABOUT ME ABOUT ME{" "}
+            <span className="text-deep-gray opacity-60">ABOUT ME</span> ABOUT ME
+            ABOUT ME ABOUT ME
+          </h2>
+
+          <div className="flex flex-col ml-44 mt-16">
+            <code>{"const name = 'Peyton M. Cleveland';"}</code>
+            <code>{"const home = 'Montgomery, AL';"}</code>
+            <code>{"let email = 'peyton.cleveland.1@gmail.com';"}</code>
+            <code>{"const children = ["}</code>
+            <code className="ml-10">{"'Ava', 'Rosalee'"}</code>
+            <code>{"];"}</code>
+            <code>{"let hobbies = ["}</code>
+            <code className="ml-10">
+              {"'Carpentry', 'Music', 'Reading', 'Graphic Design', 'Crypto'"}
+            </code>
+            <code>{"];"}</code>
+            <code>{"let favoriteBook = 'The Great Gatsby';"}</code>
+            <code>{"let runningOutOfSpace = true;"}</code>
+          </div>
         </div>
       </div>
     </div>

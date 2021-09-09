@@ -1,4 +1,5 @@
 import Header from "./header";
+import Footer from "./footer";
 import Chat from "./chat";
 
 const Layout = ({ children }) => {
@@ -7,6 +8,7 @@ const Layout = ({ children }) => {
       <Header />
       {children}
       <Chat />
+      <Footer />
     </>
   );
 };
