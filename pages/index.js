@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  let section = "<section>";
+  let sectionEnd = "</section>";
   return (
     <div>
       <Head>
@@ -14,12 +16,13 @@ export default function Home() {
         <meta name="author" content="Peyton Cleveland" />
         <meta
           name="keywords"
-          content="peyton,cleveland,digital,developer,education,ux,design,serverless,cloud"
+          content="peyton,cleveland,digital,developer,education,ux,design,serverless,cloud,university"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://peytoncleveland.com/" />
         <meta property="og:locale" content="en_US" />
-
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -141,16 +144,22 @@ export default function Home() {
         </div>
       </div>
       <div className="w-screen bg-gradient-to-br from-gray-100 to-gray-200 flex flex-row overflow-x-hidden relative">
+        <code className="absolute left-6 top-5 text-gray-100 z-30 text-2xl">
+          {section}
+        </code>
+        <code className="absolute right-6 bottom-8 text-gray-100 text-2xl">
+          {sectionEnd}
+        </code>
         <img src="redacted.png" className="w-1/2 z-20" />
         <div className="container -ml-24 mt-12 overflow-hidden flex flex-col">
-          <h2 className="text-5xl tracking-wider font-extrabold whitespace-nowrap z-10 text-gray-300 scrolltext poppins">
+          <h2 className="text-5xl tracking-wider font-extrabold whitespace-nowrap text-gray-300 scrolltext poppins">
             ABOUT ME <span className="text-deep-gray opacity-60">ABOUT ME</span>{" "}
             ABOUT ME ABOUT ME{" "}
             <span className="text-deep-gray opacity-60">ABOUT ME</span> ABOUT ME
             ABOUT ME ABOUT ME
           </h2>
 
-          <div className="flex flex-col ml-44 mt-16">
+          <div className="flex flex-col ml-48 mt-20">
             <code>{"const name = 'Peyton M. Cleveland';"}</code>
             <code>{"const home = 'Montgomery, AL';"}</code>
             <code>{"let email = 'peyton.cleveland.1@gmail.com';"}</code>
@@ -165,6 +174,23 @@ export default function Home() {
             <code>{"let favoriteBook = 'The Great Gatsby';"}</code>
             <code>{"let runningOutOfSpace = true;"}</code>
           </div>
+        </div>
+      </div>
+      <div className="w-full py-16">
+        <div className="container grid grid-cols-3">
+          <div className="space-y-2">
+            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
+              Check this out
+            </h3>
+            <h3 className="text-6xl text-gray-100 uppercase poppins">
+              Check this out
+            </h3>
+            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
+              Check this out
+            </h3>
+          </div>
+          <div>2</div>
+          <div>3</div>
         </div>
       </div>
     </div>

@@ -35,6 +35,9 @@
     -moz-animation: my-animation 60s linear infinite;
     -webkit-animation: my-animation 60s linear infinite;
     animation: my-animation 60s linear infinite;
+
+    -webkit-animation-fill-mode: initial;
+    animation-fill-mode: initial;
   }
 
   /* for Firefox */
