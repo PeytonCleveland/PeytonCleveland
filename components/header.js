@@ -53,11 +53,6 @@ const Header = () => {
             BLOG
           </a>
         </Link>
-        <Link href="/memes">
-          <a className="text-gray-300 opacity-80 font-extrabold text-sm tracking-widest transform uppercase hover:scale-105 duration-300 hover:text-green-200 hover:opacity-70">
-            Memes
-          </a>
-        </Link>
       </div>
       <div className="hidden lg:flex flex-row">
         <a href="/clevelandResume.pdf" download>

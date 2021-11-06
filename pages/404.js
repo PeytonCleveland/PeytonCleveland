@@ -5,12 +5,6 @@ export default function Custom404() {
   return (
     <>
       <div className="absolute left-0 right-0 top-0 bottom-0 flex justify-center items-center overflow-y-hidden flex-col">
-        <h1
-          style={{ fontSize: `14rem`, color: `#171717` }}
-          className="text-gray-800 font-bold error m-0 mt-10 text-5xl md:four"
-        >
-          404
-        </h1>
         <Link href="/">
           <a className="z-50 px-8 h-10 absolute bottom-56 text-black flex justify-center items-center text-sm font-extrabold tracking-widest bg-white hover:bg-gray-300 shadow-xl transform uppercase hover:scale-105 duration-300">
             TAKE ME HOME

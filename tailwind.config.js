@@ -23,6 +23,8 @@ module.exports = {
     extend: {
       colors: {
         "deep-gray": "#0d0d0d",
+        "lighter-gray": "#222222",
+        "hover-gray": "#2f2f2f",
       },
     },
   },

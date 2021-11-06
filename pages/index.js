@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  let section = "<section>";
+  let section = "<section class='about'>";
   let sectionEnd = "</section>";
   return (
     <div>
@@ -78,7 +78,7 @@ export default function Home() {
             </p>
             <div className="flex flex-row space-x-3 md:space-x-4">
               <div className="w-6 h-6 md:w-8 md:h-8 relative transform hover:scale-105 duration-300">
-                <a href="https://google.com">
+                <a href="https://www.linkedin.com/in/peytoncleveland/">
                   <Image layout="fill" src="/linkedin.svg" alt="LinkedIn" />
                 </a>
               </div>
@@ -175,23 +175,64 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full py-16">
+      <div className="w-full py-24">
         <div className="container grid grid-cols-3">
-          <div className="space-y-2">
+          <div className="space-y-4 flex justify-center flex-col items-center">
             <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
-              Check this out
+              Check it out
             </h3>
             <h3 className="text-6xl text-gray-100 uppercase poppins">
-              Check this out
+              Check it out
             </h3>
             <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
-              Check this out
+              Check it out
+            </h3>
+            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
+              Check it out
+            </h3>
+            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
+              Check it out
             </h3>
           </div>
-          <div>2</div>
-          <div>3</div>
+          <div className="flex justify-center">
+            <div
+              className="w-11/12 bg-white overflow-hidden"
+              style={{ height: `375px` }}
+            >
+              <img src="/du.png" className="object-contain" />
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="w-11/12 bg-white" style={{ height: `375px` }}></div>
+          </div>
+        </div>
+        <div className="container grid grid-cols-3 mt-24">
+          <div className="flex justify-center">
+            <div className="w-11/12 bg-white" style={{ height: `375px` }}></div>
+          </div>
+          <div className="flex justify-center">
+            <div className="w-11/12 bg-white" style={{ height: `375px` }}></div>
+          </div>
+          <div className="space-y-4 flex justify-center flex-col items-center">
+            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
+              Check it out
+            </h3>
+            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
+              Check it out
+            </h3>
+            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
+              Check it out
+            </h3>
+            <h3 className="text-6xl text-gray-100 uppercase poppins">
+              Check it out
+            </h3>
+            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
+              Check it out
+            </h3>
+          </div>
         </div>
       </div>
+      <div className="w-full bg-gray-100 h-screen">Blog</div>
     </div>
   );
 }
