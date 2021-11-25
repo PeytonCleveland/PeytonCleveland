@@ -121,7 +121,7 @@ const Blog = () => {
                 if (post.category !== active && active !== "All Categories")
                   return null;
                 return (
-                  <Link href={post.link} passHref>
+                  <Link href={post.link} passHref key={index}>
                     <a>
                       <div key={index} className="flex flex-col">
                         <img
