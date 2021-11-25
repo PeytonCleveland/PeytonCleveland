@@ -145,7 +145,7 @@ const Chat = () => {
                     placeholder="Search for posts"
                     className="border flex-1 p-2 text-sm shadow-inner outline-none bg-gray-50 focus:bg-white"
                   />
-                  <button type="button" class="bg-lighter-gray p-2">
+                  <button type="button" className="bg-lighter-gray p-2">
                     <svg
                       className="w-5 h-5 text-white"
                       fill="none"
