@@ -62,42 +62,42 @@ const Chat = () => {
       {open && (
         <div className={chatClasses()} style={{ zIndex: `1000` }}>
           <div className="bg-lighter-gray h-64 absolute w-full z-0"></div>
-          <div class="flex flex-col overflow-y-auto h-full p-4 space-y-4">
-            <div class="flex flex-col z-10 ml-4 text-white">
-              <div class="text-3xl my-2">Hi 👋</div>
-              <div class="w-60 text-gray-200 text-sm mb-1">
+          <div className="flex flex-col overflow-y-auto h-full p-4 space-y-4">
+            <div className="flex flex-col z-10 ml-4 text-white">
+              <div className="text-3xl my-2">Hi 👋</div>
+              <div className="w-60 text-gray-200 text-sm mb-1">
                 We help your business grow by connecting you to your customers.
               </div>
             </div>
-            <div class="border-0 border-t-4 border-gray-400 z-10 shadow-md text-sm">
-              <div class="bg-white border border-t-0 rounded-t-none flex flex-col space-y-2">
-                <div class="px-6 py-4 flex flex-col items-start gap-3">
-                  <div class="font-semibold ">Start a conversation</div>
-                  <div class="flex flex-row gap-3">
-                    <div class="flex flex-row -space-x-12">
+            <div className="border-0 border-t-4 border-gray-400 z-10 shadow-md text-sm">
+              <div className="bg-white border border-t-0 rounded-t-none flex flex-col space-y-2">
+                <div className="px-6 py-4 flex flex-col items-start gap-3">
+                  <div className="font-semibold ">Start a conversation</div>
+                  <div className="flex flex-row gap-3">
+                    <div className="flex flex-row -space-x-12">
                       <img
-                        class="w-16 h-16 rounded-full border-2 border-white"
+                        className="w-16 h-16 rounded-full border-2 border-white"
                         src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=facearea&w=256&h=256&facepad=2"
                       />
                       <img
-                        class="w-16 h-16 rounded-full border-2 border-white"
+                        className="w-16 h-16 rounded-full border-2 border-white"
                         src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=facearea&w=256&h=256&facepad=2"
                       />
                     </div>
-                    <div class="flex flex-col justify-center">
-                      <div class="text-gray-400">My usual reply time</div>
-                      <div class="flex flex-row items-center gap-1 font-semibold text-lighter-gray">
+                    <div className="flex flex-col justify-center">
+                      <div className="text-gray-400">My usual reply time</div>
+                      <div className="flex flex-row items-center gap-1 font-semibold text-lighter-gray">
                         <svg
-                          class="w-4 h-4 text-lighter-gray"
+                          className="w-4 h-4 text-lighter-gray"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                           ></path>
                         </svg>
@@ -107,56 +107,56 @@ const Chat = () => {
                   </div>
                   <button
                     type="button"
-                    class="bg-lighter-gray hover:bg-hover-gray text-white flex flex-row gap-2 py-3 px-5 uppercase font-semibold tracking-wider text-xs items-center"
+                    className="bg-lighter-gray hover:bg-hover-gray text-white flex flex-row gap-2 py-3 px-5 uppercase font-semibold tracking-wider text-xs items-center"
                   >
                     <svg
-                      class="w-5 h-5 transform rotate-90"
+                      className="w-5 h-5 transform rotate-90"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
                         d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
                       ></path>
                     </svg>
                     Send me a message
                   </button>
                 </div>
-                <div class="border-t px-6 py-4">
+                <div className="border-t px-6 py-4">
                   <a
                     href="#"
-                    class="text-sm text-lighter-gray hover:text-hover-gray"
+                    className="text-sm text-lighter-gray hover:text-hover-gray"
                   >
                     See all your conversations
                   </a>
                 </div>
               </div>
             </div>
-            <div class="border-0 border-t-4 border-gray-300 z-10 shadow-md">
-              <div class="bg-white border border-t-0 rounded-t-none p-6 flex flex-col space-y-2">
-                <div class="font-semibold text-sm">Check out the blog</div>
-                <div class="flex flex-row">
+            <div className="border-0 border-t-4 border-gray-300 z-10 shadow-md">
+              <div className="bg-white border border-t-0 rounded-t-none p-6 flex flex-col space-y-2">
+                <div className="font-semibold text-sm">Check out the blog</div>
+                <div className="flex flex-row">
                   <input
                     type="text"
                     placeholder="Search for posts"
-                    class="border flex-1 p-2 text-sm shadow-inner outline-none bg-gray-50 focus:bg-white"
+                    className="border flex-1 p-2 text-sm shadow-inner outline-none bg-gray-50 focus:bg-white"
                   />
                   <button type="button" class="bg-lighter-gray p-2">
                     <svg
-                      class="w-5 h-5 text-white"
+                      className="w-5 h-5 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M9 5l7 7-7 7"
                       ></path>
                     </svg>
@@ -164,7 +164,7 @@ const Chat = () => {
                 </div>
               </div>
             </div>
-            <div class="bg-white border rounded flex p-8 z-10">
+            <div className="bg-white border rounded flex p-8 z-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-10 w-10"
