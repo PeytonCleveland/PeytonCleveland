@@ -11,7 +11,7 @@ const Blog = () => {
     "All Categories",
     "Digital U",
     "Development",
-    "Data Science",
+    "AI/ML",
     "Education",
     "Music",
   ];
@@ -44,11 +44,37 @@ const Blog = () => {
       description: "This is a very brief description",
       image: "https://source.unsplash.com/random",
     },
-
     {
       id: 4,
       title: "Recommender Systems",
-      category: "Data Science",
+      category: "AI/ML",
+      link: "/",
+      date: "2020-05-01",
+      description: "This is a very brief description",
+      image: "https://source.unsplash.com/random",
+    },
+    {
+      id: 5,
+      title: "Placeholder",
+      category: "Education",
+      link: "/",
+      date: "2020-05-01",
+      description: "This is a very brief description",
+      image: "https://source.unsplash.com/random",
+    },
+    {
+      id: 6,
+      title: "Placeholder",
+      category: "Education",
+      link: "/",
+      date: "2020-05-01",
+      description: "This is a very brief description",
+      image: "https://source.unsplash.com/random",
+    },
+    {
+      id: 7,
+      title: "Placeholder",
+      category: "Education",
       link: "/",
       date: "2020-05-01",
       description: "This is a very brief description",
@@ -94,9 +120,9 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-100 py-12">
+      <div className="bg-gray-100 py-14">
         <div className="container flex flex-col">
-          <div className="flex justify-center space-x-6 pb-12">
+          <div className="flex justify-center space-x-8 pb-14">
             {categories.map((category, index) => {
               return (
                 <button
@@ -105,7 +131,7 @@ const Blog = () => {
                     active === category
                       ? "border-2 border-gray-900 bg-white"
                       : "bg-transparent border-transparent"
-                  } text-gray-800 font-bold tracking-wider py-2 px-4 uppercase border-2 hover:bg-gray-200 hover:text-gray-800`}
+                  } text-gray-800 font-bold tracking-wider text-sm py-2 px-4 uppercase border-2 hover:bg-gray-200 hover:text-gray-800`}
                   onClick={() => setActive(category)}
                 >
                   {category}
