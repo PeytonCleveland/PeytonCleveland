@@ -66,7 +66,7 @@ const Chat = () => {
             <div className="flex flex-col z-10 ml-4 text-white">
               <div className="text-3xl my-2">Hi 👋</div>
               <div className="w-60 text-gray-200 text-sm mb-1">
-                We help your business grow by connecting you to your customers.
+                Want to get in touch? Send me a message here.
               </div>
             </div>
             <div className="border-0 border-t-4 border-gray-400 z-10 shadow-md text-sm">
@@ -164,7 +164,7 @@ const Chat = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white border rounded flex p-8 z-10">
+            <div className="bg-white border-0 border-t-4 border-gray-300 flex p-8 shadow-md z-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-10 w-10"

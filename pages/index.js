@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import CheckItOut from "../components/check-it-out";
 
 export default function Home() {
   let section = "<section class='about'>";
@@ -126,14 +127,14 @@ export default function Home() {
 
           <div className="flex flex-col ml-48 mt-20">
             <code>{"const name = 'Peyton M. Cleveland';"}</code>
-            <code>{"const home = 'Montgomery, AL';"}</code>
+            <code>{"let home = 'Montgomery, AL';"}</code>
             <code>
               <a href="mailto:peyton.cleveland.1@gmail.com">
                 {"let email = 'peyton.cleveland.1@gmail.com';"}
               </a>
             </code>
 
-            <code>{"const children = ["}</code>
+            <code>{"let children = ["}</code>
             <code className="ml-10">{"'Ava', 'Rosalee'"}</code>
             <code>{"];"}</code>
             <code>{"let hobbies = ["}</code>
@@ -148,23 +149,7 @@ export default function Home() {
       </div>
       <div className="w-full py-24">
         <div className="container grid grid-cols-3">
-          <div className="space-y-4 flex justify-center flex-col items-center">
-            <h3 className="text-6xl font-extrabold text-transparent uppercase poppins outlinedbright opacity-40">
-              Check it out
-            </h3>
-            <h3 className="text-6xl font-extrabold text-gray-100 uppercase poppins">
-              Check it out
-            </h3>
-            <h3 className="text-6xl font-extrabold text-transparent uppercase poppins outlinedbright opacity-40">
-              Check it out
-            </h3>
-            <h3 className="text-6xl font-extrabold text-transparent uppercase poppins outlinedbright opacity-40">
-              Check it out
-            </h3>
-            <h3 className="text-6xl font-extrabold text-transparent uppercase poppins outlinedbright opacity-40">
-              Check it out
-            </h3>
-          </div>
+          <CheckItOut />
           <div className="flex justify-center">
             <div
               className="w-11/12 bg-white overflow-hidden"
@@ -184,23 +169,7 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="w-11/12 bg-white" style={{ height: `375px` }}></div>
           </div>
-          <div className="space-y-4 flex justify-center flex-col items-center">
-            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
-              Check it out
-            </h3>
-            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
-              Check it out
-            </h3>
-            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
-              Check it out
-            </h3>
-            <h3 className="text-6xl text-gray-100 uppercase poppins">
-              Check it out
-            </h3>
-            <h3 className="text-6xl text-transparent uppercase poppins outlinedbright opacity-40">
-              Check it out
-            </h3>
-          </div>
+          <CheckItOut />
         </div>
       </div>
       <div className="w-full bg-gray-100 h-screen">Blog</div>

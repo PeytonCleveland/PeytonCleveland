@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Posts from "../../_posts";
+
 const Blog = () => {
   // Create state for active button
   const [active, setActive] = useState("All Categories");
 
   const router = useRouter();
+
+  console.log("posts", Posts);
 
   const categories = [
     "All Categories",
@@ -14,72 +18,6 @@ const Blog = () => {
     "AI/ML",
     "Education",
     "Music",
-  ];
-
-  const posts = [
-    {
-      id: 1,
-      title: "Digital U",
-      category: "Digital U",
-      link: "/",
-      date: "2020-05-01",
-      description: "This is a very brief description",
-      image: "https://source.unsplash.com/random",
-    },
-    {
-      id: 2,
-      title: "Tailwind CSS",
-      category: "Development",
-      link: "https://digitalu.af.mil",
-      date: "2020-05-01",
-      description: "This is a very brief description",
-      image: "https://source.unsplash.com/random",
-    },
-    {
-      id: 3,
-      title: "Mahler's 9th",
-      category: "Music",
-      link: "/",
-      date: "2020-05-01",
-      description: "This is a very brief description",
-      image: "https://source.unsplash.com/random",
-    },
-    {
-      id: 4,
-      title: "Recommender Systems",
-      category: "AI/ML",
-      link: "/",
-      date: "2020-05-01",
-      description: "This is a very brief description",
-      image: "https://source.unsplash.com/random",
-    },
-    {
-      id: 5,
-      title: "Placeholder",
-      category: "Education",
-      link: "/",
-      date: "2020-05-01",
-      description: "This is a very brief description",
-      image: "https://source.unsplash.com/random",
-    },
-    {
-      id: 6,
-      title: "Placeholder",
-      category: "Education",
-      link: "/",
-      date: "2020-05-01",
-      description: "This is a very brief description",
-      image: "https://source.unsplash.com/random",
-    },
-    {
-      id: 7,
-      title: "Placeholder",
-      category: "Education",
-      link: "/",
-      date: "2020-05-01",
-      description: "This is a very brief description",
-      image: "https://source.unsplash.com/random",
-    },
   ];
 
   return (
@@ -142,7 +80,7 @@ const Blog = () => {
           <div className="grid grid-cols-3 gap-10 w-full">
             {
               // Map through posts
-              posts.map((post, index) => {
+              Posts.map((post, index) => {
                 // Remove post if category is not active
                 if (post.category !== active && active !== "All Categories")
                   return null;
