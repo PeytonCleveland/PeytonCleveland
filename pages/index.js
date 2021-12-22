@@ -59,11 +59,6 @@ export default function Home() {
                 </a>
               </div>
               <div className="w-6 h-6 md:w-8 md:h-8 relative transform hover:scale-105 duration-300">
-                <a href="https://google.com">
-                  <Image layout="fill" src="/slack.svg" alt="Slack" />
-                </a>
-              </div>
-              <div className="w-6 h-6 md:w-8 md:h-8 relative transform hover:scale-105 duration-300">
                 <a href="https://discordapp.com/users/646023304087470101">
                   <Image layout="fill" src="/discord.svg" alt="Discord" />
                 </a>
