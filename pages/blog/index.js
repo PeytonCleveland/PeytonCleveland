@@ -9,8 +9,6 @@ const Blog = () => {
 
   const router = useRouter();
 
-  console.log("posts", Posts);
-
   const categories = [
     "All Categories",
     "Digital U",

@@ -1,6 +1,7 @@
 const Posts = [
   {
     id: 1,
+    slug: "digital-u",
     title: "Digital U",
     category: "Digital U",
     link: "/",
@@ -10,6 +11,7 @@ const Posts = [
   },
   {
     id: 2,
+    slug: "tailwind-css",
     title: "Tailwind CSS",
     category: "Development",
     link: "https://digitalu.af.mil",
@@ -19,6 +21,7 @@ const Posts = [
   },
   {
     id: 3,
+    slug: "mahler's-9th",
     title: "Mahler's 9th",
     category: "Music",
     link: "/",
@@ -28,6 +31,7 @@ const Posts = [
   },
   {
     id: 4,
+    slug: "recommender-systems",
     title: "Recommender Systems",
     category: "AI/ML",
     link: "/",
@@ -37,6 +41,7 @@ const Posts = [
   },
   {
     id: 5,
+    slug: "placeholder",
     title: "Placeholder",
     category: "Education",
     link: "/",
@@ -46,6 +51,7 @@ const Posts = [
   },
   {
     id: 6,
+    slug: "placeholder",
     title: "Placeholder",
     category: "Education",
     link: "/",
@@ -55,6 +61,7 @@ const Posts = [
   },
   {
     id: 7,
+    slug: "placeholder",
     title: "Placeholder",
     category: "Education",
     link: "/",
